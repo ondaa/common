@@ -1,0 +1,25 @@
+{
+  "name": "@ondaa/common",
+  "version": "0.0.1",
+  "description": "Common use tool, library",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ondaa/common.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "ondaa <demnodey@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ondaa/common/issues"
+  },
+  "homepage": "https://github.com/ondaa/common#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}

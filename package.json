@@ -2,9 +2,10 @@
   "name": "@ondaa/common",
   "version": "0.0.1",
   "description": "Common use tool, library",
-  "main": "build/index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,13 @@
   },
   "homepage": "https://github.com/ondaa/common#readme",
   "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.1",
+    "node": "^13.8.0"
   }
 }

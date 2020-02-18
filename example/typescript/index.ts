@@ -1,4 +1,4 @@
-import { isEmpty } from "../../build";
+import { isEmpty } from "../../bin";
 
 const result = isEmpty("");
 

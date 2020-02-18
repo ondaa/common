@@ -1,4 +1,4 @@
-const common = require("../../build");
+const common = require("../../bin");
 const { isEmpty } = common;
 
 const result = isEmpty(null);

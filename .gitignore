@@ -11,4 +11,4 @@ yarn.lock
 .DS_Store*
 
 # source code
-build
+bin

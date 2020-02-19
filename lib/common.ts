@@ -1,6 +1,7 @@
-import { trim } from "./string";
+import { rmSpace } from "./string";
 
-const isEmpty = (value: any): boolean => isNull(value) || trim(value) === "";
+const isEmpty = (value: any): boolean =>
+  isNull(value) || value === "" || value === undefined;
 
 const isNull = (value: any): boolean =>
   typeof value === "object" && value === null;

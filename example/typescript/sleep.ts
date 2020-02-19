@@ -1,9 +1,9 @@
 import { sleep } from "../../bin/fn";
 
 async function test() {
-  console.log("start");
+  console.log("start date", new Date());
   await sleep(3000);
-  console.log("finish");
+  console.log("end date", new Date());
 }
 
 test();

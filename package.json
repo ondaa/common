@@ -5,7 +5,8 @@
   "main": "bin/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest --runInBand --detectOpenHandles --forceExit"
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "local:test": "npx jest --config jest.config.js"
   },
   "repository": {
     "type": "git",

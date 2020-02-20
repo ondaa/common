@@ -1,5 +1,3 @@
-import { rmSpace } from "./string";
-
 const isEmpty = (value: any): boolean =>
   isNull(value) || value === "" || value === undefined;
 
@@ -24,6 +22,9 @@ const isArray = (value: any): boolean =>
 const isFunction = (value: any): boolean =>
   Object.prototype.toString.call(value) === "[object Function]";
 
+const hasOwnProperty = (obj: object, key: string) =>
+  Object.prototype.hasOwnProperty.call(obj, key);
+
 export {
   isArray,
   isBoolean,
@@ -32,5 +33,6 @@ export {
   isNull,
   isNumber,
   isObject,
-  isString
+  isString,
+  hasOwnProperty
 };

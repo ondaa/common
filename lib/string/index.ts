@@ -7,7 +7,10 @@ import { isEmpty, isObject } from "../common";
  * @description
  * * 공백제거
  */
-export const rmSpace = (value: string, part?: "left" | "right" | "all") => {
+export const rmSpace = (
+  value: string,
+  part?: "left" | "right" | "all"
+): string => {
   const regex =
     part === "all" || isEmpty(part)
       ? /\s/g
@@ -26,21 +29,13 @@ export const rmSpace = (value: string, part?: "left" | "right" | "all") => {
  * * object를 uri query로 만들어준다.
  * * 특수 문자의 경우 자동 encodeURIComponent로 자동 변환 된다.
  */
-export const encodeQuery = (
-  obj: object,
-  includeNull: boolean = false
-): string => {
+export const encodeQuery = (obj: object): string => {
   if (!isObject(obj)) return "";
 
   let queryStorage = [];
   for (let [key, value] of Object.entries(obj)) {
-    if (includeNull) {
-      const $value = !isEmpty(value) ? value : "";
-      queryStorage.push(`${key}=${encodeURIComponent($value)}`);
-    } else {
-      if (!isEmpty(value)) {
-        queryStorage.push(`${key}=${encodeURIComponent(value)}`);
-      }
+    if (!isEmpty(value)) {
+      queryStorage.push(`${key}=${encodeURIComponent(value)}`);
     }
   }
 

@@ -23,16 +23,4 @@ describe("encodeQuery make uri query", () => {
       })
     ).toBe("Hello=World&js=javascript");
   });
-
-  it("For null values", () => {
-    expect(
-      encodeQuery(
-        {
-          null: null,
-          notnull: "value"
-        },
-        true
-      )
-    ).toBe("null=&notnull=value");
-  });
 });

@@ -1,4 +1,4 @@
-# @ondaa/common v0.0.2
+# @ondaa/common
 Weird modules created by novice developers
 ## How to install
 

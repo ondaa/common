@@ -2,7 +2,7 @@
  * @method sleep
  * @param duration ms
  * @description
- * * Wait for process for duration
+ * * The process waits for a duration.
  */
 
 const sleep = (duration: number): Promise<void> =>

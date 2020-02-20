@@ -1,4 +1,4 @@
-import { isNull, isEmpty } from "../lib";
+import { isNull, isEmpty, hasOwnProperty } from "../common";
 
 describe("isNull and isEmpty functions are empty value handlers", () => {
   it("should return true if null", () => {
@@ -15,5 +15,10 @@ describe("isNull and isEmpty functions are empty value handlers", () => {
 
   it("should return true if null", () => {
     expect(isEmpty(null)).toBe(true);
+  });
+
+  it("should return true if the object has an 'apple' key", () => {
+    const color = { apple: "red" };
+    expect(hasOwnProperty(color, "apple")).toBe(true);
   });
 });

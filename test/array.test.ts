@@ -1,4 +1,4 @@
-import { findIndexs } from "../lib/array";
+import { findIndexs } from "../array";
 
 describe("Array Test Suit", () => {
   it("should return multiple matches of more then 3", () => {

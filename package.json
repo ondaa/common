@@ -1,6 +1,6 @@
 {
   "name": "@ondaa/common",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Common use tool, library",
   "keywords": [
     "common",
@@ -14,21 +14,9 @@
     "test": "jest --runInBand --detectOpenHandles --forceExit",
     "local:test": "npx jest --config jest.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ondaa/common.git"
-  },
   "files": [
-    "bin",
-    "test"
+    "!lib"
   ],
-  "author": "ondaa <demnodey@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ondaa/common/issues",
-    "email": "demnodey@gmail.com"
-  },
-  "homepage": "https://github.com/ondaa/common#readme",
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "jest": "^25.1.0",
@@ -38,5 +26,19 @@
   "dependencies": {
     "@types/node": "^13.7.1",
     "node": "^13.8.0"
-  }
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ondaa/common.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ondaa/common/issues",
+    "email": "demnodey@gmail.com"
+  },
+  "homepage": "https://github.com/ondaa/common#readme",
+  "author": "ondaa <demnodey@gmail.com>",
+  "license": "ISC"
 }

@@ -1,4 +1,4 @@
-import { rmSpace, encodeQuery } from "../lib/string";
+import { rmSpace, encodeQuery } from "../string";
 
 describe("rmSpace all suit case", () => {
   it("'all' is should return 'blueiscool' with no spaces", () => {

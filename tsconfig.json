@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "./bin",
+    "outDir": "./",
     "declaration": true,
     "strict": true,
     "types": ["@types/jest", "jest", "@types/node", "node"],
@@ -10,5 +10,5 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": ["./lib"],
-  "exclude": ["node_modules", "./example", "./bin", "./test"]
+  "exclude": ["node_modules", "./example", "./test"]
 }

@@ -11,4 +11,13 @@ yarn.lock
 .DS_Store*
 
 # source code
-bin
+/array
+/bin
+/common
+/example
+/fn
+/string
+/object
+
+/*.d.ts
+/*.js

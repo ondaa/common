@@ -1,5 +1,5 @@
 # @ondaa/common v0.0.2
-한국 개발자가 만드는 이상한 common 라이브러리
+Weird modules created by novice developers
 ## How to install
 
 Using npm
@@ -37,3 +37,5 @@ const fn = require("@ondaa/common/fn");
 import { hasOwnProperty } from "@ondaa/common";
 ```
 No @types needed. Just use it
+
+P.S Thank you for using my module

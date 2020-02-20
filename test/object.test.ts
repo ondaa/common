@@ -1,4 +1,4 @@
-import { notIncludeNull } from "../lib/object";
+import { n2ullow } from "../object";
 
 describe("Object Test Suit", () => {
   it("should return value of not include null", () => {
@@ -8,7 +8,7 @@ describe("Object Test Suit", () => {
       c: 2
     };
 
-    expect(notIncludeNull(obj)).toStrictEqual({
+    expect(n2ullow(obj)).toStrictEqual({
       a: 1,
       c: 2
     });

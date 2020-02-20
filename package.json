@@ -1,6 +1,6 @@
 {
   "name": "@ondaa/common",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Common use tool, library",
   "keywords": [
     "common",
@@ -15,7 +15,15 @@
     "local:test": "npx jest --config jest.config.js"
   },
   "files": [
-    "!lib"
+    "fn",
+    "string",
+    "object",
+    "fn",
+    "array",
+    "test",
+    "*.d.ts",
+    "index.js",
+    "common.js"
   ],
   "devDependencies": {
     "@types/jest": "^25.1.2",

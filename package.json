@@ -2,6 +2,12 @@
   "name": "@ondaa/common",
   "version": "0.0.2",
   "description": "Common use tool, library",
+  "keywords": [
+    "common",
+    "modules",
+    "util",
+    "lib"
+  ],
   "main": "bin/index.js",
   "scripts": {
     "build": "tsc",
@@ -13,12 +19,14 @@
     "url": "git+https://github.com/ondaa/common.git"
   },
   "files": [
-    "build"
+    "bin",
+    "test"
   ],
   "author": "ondaa <demnodey@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ondaa/common/issues"
+    "url": "https://github.com/ondaa/common/issues",
+    "email": "demnodey@gmail.com"
   },
   "homepage": "https://github.com/ondaa/common#readme",
   "devDependencies": {

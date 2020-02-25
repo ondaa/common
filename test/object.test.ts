@@ -1,4 +1,4 @@
-import { n2ullow } from "../object";
+import { n2ullow } from "../lib/object";
 
 describe("Object Test Suit", () => {
   it("should return value of not include null", () => {

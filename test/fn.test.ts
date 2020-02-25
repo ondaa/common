@@ -1,4 +1,4 @@
-import { sleep } from "../fn";
+import { sleep } from "../lib/fn";
 
 jest.useFakeTimers();
 

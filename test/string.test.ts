@@ -1,4 +1,9 @@
-import { rmSpace, encodeQuery } from "../string";
+import {
+  rmSpace,
+  encodeQuery,
+  headToUpperCase,
+  snakeHeadToUpperCase
+} from "../lib/string";
 
 describe("rmSpace all suit case", () => {
   it("'all' is should return 'blueiscool' with no spaces", () => {
@@ -22,5 +27,22 @@ describe("encodeQuery make uri query", () => {
         js: "javascript"
       })
     ).toBe("Hello=World&js=javascript");
+  });
+});
+
+describe("toUpper method is string upper relation function", () => {
+  it("default string method toUpperCase is 'parse' to 'PARSE'", () => {
+    expect("parse".toUpperCase()).toBe("PARSE");
+  });
+
+  it("'headToUpperCase' is changed 'parse' to 'Parse'", () => {
+    expect(headToUpperCase("head")).toBe("Head");
+  });
+
+  it("'snakeHeadToUpperCase' is changed 'parse_to_parse' to 'ParseToParse'", () => {
+    expect(snakeHeadToUpperCase("head_snake_tail")).toBe("Head_Snake_Tail");
+    expect(snakeHeadToUpperCase("head_snake_tail", false)).toBe(
+      "HeadSnakeTail"
+    );
   });
 });

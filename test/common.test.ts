@@ -1,4 +1,4 @@
-import { isNull, isEmpty, hasOwnProperty } from "../common";
+import { isNull, isEmpty, hasOwnProperty } from "../lib/common";
 
 describe("isNull and isEmpty functions are empty value handlers", () => {
   it("should return true if null", () => {

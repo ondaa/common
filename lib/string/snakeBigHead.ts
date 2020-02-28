@@ -2,7 +2,7 @@ import { bodyAssemblyHeadToUpperCase } from "./helper";
 import { isEmpty } from "../common";
 
 /**
- * @method snakeHeadToUpperCase
+ * @method snakeBigHead
  * @param value 값
  * @param includeSpecial _ 포함 여부 default true
  * @description
@@ -12,7 +12,7 @@ import { isEmpty } from "../common";
  * @fixed
  */
 
-const snakeHeadToUpperCase = (value: string, includeSpecial?: boolean) => {
+const snakeBigHead = (value: string, includeSpecial?: boolean) => {
   if (isEmpty(includeSpecial) || typeof includeSpecial !== "boolean") {
     includeSpecial = true;
   }
@@ -23,4 +23,4 @@ const snakeHeadToUpperCase = (value: string, includeSpecial?: boolean) => {
     .join(includeSpecial ? "_" : "");
 };
 
-export default snakeHeadToUpperCase;
+export default snakeBigHead;

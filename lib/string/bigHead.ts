@@ -1,7 +1,7 @@
 import { bodyAssemblyHeadToUpperCase } from "./helper";
 
 /**
- * @method headToUpperCase
+ * @method snakeBigHead
  * @param value 값
  * @description
  * * value의 첫번째 글자를 uppercase 해준다.
@@ -10,4 +10,4 @@ import { bodyAssemblyHeadToUpperCase } from "./helper";
  */
 
 const headToUpperCase = (value: string) => bodyAssemblyHeadToUpperCase(value);
-export default headToUpperCase;
+export default snakeBigHead;

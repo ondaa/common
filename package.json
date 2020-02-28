@@ -12,12 +12,13 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --runInBand --detectOpenHandles --forceExit",
-    "test:local": "npx jest --config jest.config.js"
+    "test:local": "./node_modules/jest-cli --config jest.config.js"
   },
   "files": [
     "fn",
     "string",
     "object",
+    "number",
     "fn",
     "array",
     "test",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "jest": "^25.1.0",
+    "jest-mock-random": "^1.0.3",
     "ts-jest": "^25.2.0",
     "typescript": "^3.7.5"
   },

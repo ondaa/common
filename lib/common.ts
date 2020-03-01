@@ -1,3 +1,5 @@
+import { isOverlap } from "./array";
+
 const isEmpty = (value: any): boolean =>
   isNull(value) || value === "" || value === undefined;
 
@@ -33,6 +35,7 @@ export {
   isNull,
   isNumber,
   isObject,
+  isOverlap,
   isString,
   hasOwnProperty
 };

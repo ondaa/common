@@ -1,4 +1,4 @@
-import { findIndexs } from "../lib/array";
+import { findIndexs, isOverlap, unique } from "../lib/array";
 
 describe("Array Test Suit", () => {
   it("should return multiple matches of more then 3", () => {
@@ -11,5 +11,15 @@ describe("Array Test Suit", () => {
     const arr = [{ a: "1" }, { a: "2" }, { a: "1" }, { a: "2" }];
 
     expect(findIndexs(arr, ({ a }) => a === "1")).toStrictEqual([0, 2]);
+  });
+});
+
+describe("Overlap methods", () => {
+  it("'isOverlap' is to check overlap array", () => {
+    expect(isOverlap([1, 2, 2])).toEqual(true);
+  });
+
+  it("'unique' is to remove overlap item in array and return new array", () => {
+    expect(unique([1, 2, 2, "a", 1, "a"])).toEqual([1, 2, "a"]);
   });
 });

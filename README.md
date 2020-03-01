@@ -38,7 +38,7 @@ const fn = require("@ondaa/common/fn");
 ```typescript
 // tsfile.ts
 import { hasOwnProperty } from "@ondaa/common";
-import { bigHead } from "@ondaa/string"
+import { camelCase } from "@ondaa/string"
 ```
 No @types needed. Just use it
 

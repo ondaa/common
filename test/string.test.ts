@@ -1,6 +1,5 @@
 import {
   rmSpace,
-  encodeQuery,
   pascalCase,
   camelCase,
   snakeCase,
@@ -28,17 +27,6 @@ describe("rmSpace all suit case", () => {
 
   it("'right' is should return 'blue is cool' with no spaces on the right", () => {
     expect(rmSpace("blue is cool  ", "right")).toBe("blue is cool");
-  });
-});
-
-describe("encodeQuery make uri query", () => {
-  it("The return value is 'Hello=World&js=javascript' and type is string", () => {
-    expect(
-      encodeQuery({
-        Hello: "World",
-        js: "javascript"
-      })
-    ).toBe("Hello=World&js=javascript");
   });
 });
 

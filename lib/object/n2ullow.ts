@@ -1,4 +1,4 @@
-import { getKeys } from "./helfer";
+import { getKeys, KeyOfString } from "./helfer";
 import { isEmpty } from "../common";
 
 /**
@@ -6,14 +6,10 @@ import { isEmpty } from "../common";
  * @param obj
  * @description
  * * object안에 value가 null인건 자동으로 제거하고 새로운 object를 반환한다.
- *
- * @fixed
  */
 
-export type InitialObject = { [key: string]: any };
-
-export const n2ullow = (obj: InitialObject) => {
-  const result: InitialObject = {};
+export const n2ullow = (obj: KeyOfString) => {
+  const result: KeyOfString = {};
 
   getKeys(obj).forEach(key => {
     if (!isEmpty(obj[key])) result[key] = obj[key];

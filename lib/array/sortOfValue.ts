@@ -6,7 +6,7 @@ import { KeyOfString } from "../object/helfer";
  * @param sortKey
  * @param orderBy
  * @description
- * * object의 value 로
+ * * object의 value로 정렬
  */
 
 const sortOfValue = (

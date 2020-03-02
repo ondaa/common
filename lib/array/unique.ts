@@ -7,7 +7,7 @@
 
 const unique = (arr: Array<string | number>): typeof arr => {
   const result: typeof arr = [];
-  arr.forEach(item => !result.includes(item) && result.push(item));
+  arr.forEach(item => result.indexOf(item) === -1 && result.push(item));
   return result;
 };
 

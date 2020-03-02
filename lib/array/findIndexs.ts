@@ -13,10 +13,9 @@ const findIndexs = <T = any>(
   callback: (keyword: T, index: number) => any
 ): number[] =>
   arr
-    .map((v, index) => {
-      const bool = callback(v, index);
-      return bool && index;
-    })
+    .map((item, index) => callback(item, index) && index)
     .filter(v => typeof v === "number");
+
+// callback은 true,false를 반환한다
 
 export default findIndexs;

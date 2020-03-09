@@ -3,6 +3,7 @@ import {
   pascalCase,
   camelCase,
   snakeCase,
+  onlyString,
   toHeadUpperCase,
   nl2br,
   escape
@@ -12,7 +13,11 @@ it("toHeadUpperCase changes 'apple' to 'Apple'", () => {
   expect(toHeadUpperCase("apple")).toBe("Apple");
 });
 
-it("'nl2br' changes \n to <br/>", () => {
+it("onlyString return to string without special char", () => {
+  expect(onlyString("@tag #hashtag")).toBe("tag hashtag");
+});
+
+it("'nl2br' changes \\n to <br/>", () => {
   expect(nl2br("line\nbreak")).toBe("line<br/>break");
 });
 

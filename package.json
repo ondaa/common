@@ -21,6 +21,7 @@
     "number",
     "fn",
     "array",
+    "collection",
     "test",
     "*.d.ts",
     "index.js",

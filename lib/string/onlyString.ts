@@ -10,6 +10,9 @@
  */
 
 const onlyString = (str: string, replaceText?: string): string =>
-  str.replace(/([^\w|\s]|\_)/g, replaceText || "");
+  str.replace(
+    /[\!\@\#\$\%\^\&\*\(\)\_\-\+\=\.\,\/\[\]\{\}\`\~\\\:\;]/g,
+    replaceText || ""
+  );
 
 export default onlyString;

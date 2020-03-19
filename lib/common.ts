@@ -1,4 +1,5 @@
 import { isOverlap } from "./array";
+import { isEmail, isPossiblePassword } from "./string";
 
 const isEmpty = (value: any): boolean =>
   isNull(value) || value === "" || value === undefined;
@@ -30,12 +31,14 @@ const hasOwnProperty = (obj: object, key: string) =>
 export {
   isArray,
   isBoolean,
+  isEmail,
   isEmpty,
   isFunction,
   isNull,
   isNumber,
   isObject,
   isOverlap,
+  isPossiblePassword,
   isString,
   hasOwnProperty
 };

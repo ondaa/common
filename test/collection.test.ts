@@ -1,4 +1,13 @@
-import { count, sortOfValue, sort } from "../lib/collection";
+import { count, sortOfValue, sort, groupBy } from "../lib/collection";
+
+it("groupBy is remove overlap values", () => {
+  expect(
+    groupBy(
+      [{ value: "1" }, { value: "1" }, { value: "2" }, { value: "3" }],
+      "value"
+    )
+  ).toEqual([{ value: "1" }, { value: "2" }, { value: "3" }]);
+});
 
 describe("count methods", () => {
   it("count duplicate items in array", () => {

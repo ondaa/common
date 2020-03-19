@@ -1,6 +1,6 @@
 # @ondaa/common
 
-version :: v0.0.5
+common === easy || simple
 
 ## How to install
 
